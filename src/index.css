@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: black;
+}
+.cab{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  margin:5px 0px;
+}
+.fa{
+  transition:all 0.2s ease-in-out;
+  opacity:0;
+}
+.lo{
+  margin-left:5px;
+  margin-right:5px;
+  /* height:200px; */
+  margin-bottom:10px;
+  display:flex;
+  height:464px;
+  width:400px;
+  flex-direction: column;
+  background-color: black;
+  color:white;
+  border:1px solid white;
+  transition:all 0.2s ease-in-out;
+}
+.heero{
+  margin-left:330px;
+  width:400px;
+  margin-bottom: 120px;
+
+}
+.card{
+  transition:all 0.2s ease-in-out;
+}
+.lo .btn{
+  margin-top:auto;
+  opacity:0;
+}
+
+.card:hover{
+  height:auto;
+  transform:scale(1.02);
+  transition:all 0.2s ease-in-out;
+
+}
+.card:hover .fa{
+  opacity:1;
+}
+.heero:hover{
+  transform:scale(1.08);
+  transition: all 0.2s ease-in-out;
+}
+.spinner{
+  border:6px solid #f3f3f3;
+  border-top:6px solid #3498db;
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  animation: spin 0.8s linear infinite
+}
+/* .NavBar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 10px 20px !important;
+  gap: 10px !important;
+  background: rgba(0, 255, 0, 0.2) !important;
+}
+
+.NavBar form {
+  flex-wrap: wrap !important;
+  display: flex !important;
+  gap: 10px;
+} */
+
+/* .InputBar {
+  min-width: 200px;
+  flex-grow: 1;
+} */
+@keyframes spin{
+  0% {transform: rotate(0deg);}
+  100%{transform:rotate(360deg)}
+}
+@media(max-width:630px){
+  .cab{
+    display:flex;
+    flex-direction: row;
+    gap:1rem !important;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  .heero{
+    margin-left:0;
+    height:34rem;
+    width:24rem;
+  }
+  .Hero{
+    /* position:fixed; */
+    margin:0 !important;
+    margin-left:12rem !important;
+    padding:0;
+  }
+  
+  .LeftArrow1{
+    margin: 0 !important;
+    z-index: 4;
+  }
+  .OverallHero{
+    margin-left:2rem !important;
+  }
+  .lo{
+    height:min-content;
+    max-width: min-content;
+  }
+  .NavBar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .NavBar form {
+    flex-direction: row !important;
+    width: 100% !important;
+  }
+
+  .InputBar{
+    width:80% !important;
+    margin-left:5px;
+  }
+  .NavBar .btn {
+    width: 40% !important;
+  }
+}
