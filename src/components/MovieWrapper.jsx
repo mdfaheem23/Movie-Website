@@ -17,7 +17,7 @@ const MovieWrapper = ({d}) => {
         const Fetchdata= async()=>{
           try{
             let Random=  MovieList[(Math.floor(Math.random() * MovieList.length))];
-          let a= await fetch("http://www.omdbapi.com/?apikey=a5d12b67&t="+Random);
+          let a= await fetch("https://www.omdbapi.com/?apikey=a5d12b67&t="+Random);
           let b=await a.json();
           SetImage2(Image2=>[...Image2,b.Poster]);
           }catch(err){

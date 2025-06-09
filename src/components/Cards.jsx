@@ -8,7 +8,7 @@ const Cards = ({m}) => {
   useEffect(()=>{
     const Fetchdata= async()=>{
       try{
-      let a= await fetch("http://www.omdbapi.com/?apikey=a5d12b67&t="+m);
+      let a= await fetch("https://www.omdbapi.com/?apikey=a5d12b67&t="+m);
       let b=await a.json();
       SetImage(b);
       console.log(b);

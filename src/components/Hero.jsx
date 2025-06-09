@@ -10,7 +10,7 @@ const Hero = () => {
       while(Image1.length<3){
       try{
         let Random=MovieList[(Math.floor(Math.random() * MovieList.length))];
-      let a= await fetch("http://www.omdbapi.com/?apikey=a5d12b67&t="+Random);
+      let a= await fetch("https://www.omdbapi.com/?apikey=a5d12b67&t="+Random);
       let b=await a.json();
       SetImage1(Image1=>[...Image1,b.Poster]);
       SetLoading(false);
