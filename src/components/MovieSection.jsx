@@ -3,6 +3,7 @@ import '../index.css'
 import NavBar from './NavBar';
 import './Cards';
 import Cards from './Cards';
+import.meta.env.VITE_OMDB_API_KEY;
 const MovieSection = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,8 +11,7 @@ const MovieSection = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        // const API_KEY = process.env.REACT_APP_OMDB_API_KEY;
-// const url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchTerm}`;
+        const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
         const response = await fetch(`https://www.omdbapi.com/?apikey=a5d12b67&s=`);
         const data = await response.json();
         console.log(data);
