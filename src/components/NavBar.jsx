@@ -28,8 +28,9 @@ const NavBar = ({ C, D, E }) => {
             display: "flex",
             alignItems: "center",
           }}
+          onClick={D}
         >
-          <img src="img4.png" alt="logo" />
+          <img src="../img4.png" alt="logo" />
           &nbsp;
           <span
             className="mt-1 px-2 py-3"
@@ -38,19 +39,6 @@ const NavBar = ({ C, D, E }) => {
             M CORNER
           </span>
         </Link>
-{/* 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button> */}
-
         <div className="d-flex align-items-center justify-content-between w-100" id="navbarSupportedContent">
           <ul className="navbar-nav d-flex flex-row align-items-center mb-0">
             <li className="nav-item me-1">

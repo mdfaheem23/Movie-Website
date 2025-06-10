@@ -4,9 +4,10 @@ import '../index.css';
 
 const Cards = ({m}) => {
   const [Image,SetImage]=useState('');
-  const [Loading,SetLoading]=useState(true);
+  const [Loading,SetLoading]=useState(false);
   useEffect(()=>{
     const Fetchdata= async()=>{
+      SetLoading(true);
       try{
       let a= await fetch("https://www.omdbapi.com/?apikey=a5d12b67&t="+m);
       let b=await a.json();
@@ -17,7 +18,6 @@ const Cards = ({m}) => {
         console.log("here is the error"+err);
         SetLoading(false);
       }
-      
     }
     Fetchdata();
   }
@@ -35,5 +35,4 @@ const Cards = ({m}) => {
   </div>
   )
 }
-
 export default Cards
