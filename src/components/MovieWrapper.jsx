@@ -2,7 +2,7 @@ import React from 'react'
 import {useState,useEffect} from 'react'
 import Cards from './Cards';
 import MovieList from './MovieList';
-import { getRandomMovies } from './getRandomMovies';
+import getRandomMovies  from './getRandomMovies';
 const MovieWrapper = ({d}) => {
     let [Image2,SetImage2]=useState([]);
       const randomTenMovies = getRandomMovies(MovieList, d);
