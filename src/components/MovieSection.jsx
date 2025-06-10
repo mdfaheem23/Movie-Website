@@ -5,7 +5,7 @@ import './Cards';
 import Cards from './Cards';
 import.meta.env.VITE_OMDB_API_KEY;
 import MovieList from './MovieList';
-import { getRandomMovies } from './MovieWrapper';
+import getRandomMovies from './getRandomMovies';
 
 const MovieSection = () => {
   const [MovieName, setMovieName] = useState('');
