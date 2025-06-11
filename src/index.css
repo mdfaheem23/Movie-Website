@@ -97,6 +97,15 @@ body{
   justify-content: space-around;
   margin-top:3rem;
 }
+.centerimg{
+  display:flex;
+  text-align: center;
+  text-justify: center;
+  align-items: center;
+  height:100vh;
+
+
+}
 /* .AutoCard{
   width:auto;
   height:min-content;

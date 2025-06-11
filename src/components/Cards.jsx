@@ -26,7 +26,7 @@ const Cards = ({m}) => {
     return <h3 style={{Color:"white"}}>Loading...</h3>
   return (
     <div class="card lo mb-3 me-4" style={{width:"280px",borderRadius:"10px"}}>
-    <img src={Image.Poster} style={{borderRadius:"10px",height:"330px"}} className="border-bottom"></img>
+    <img src={Image.Poster} style={{borderRadius:"10px",height:"330px"}} className="border-bottom centerimg" alt="Image Not Found"></img>
     <div class="card-body">
       <h5 class="card-title image text-center mt-3">{Image.Title}</h5>
       <h6 class="card-subtitle mt-2 text-center " style={{color:"235, 198, 52"}}><b>IMDB : </b>{Image.imdbRating}</h6>
