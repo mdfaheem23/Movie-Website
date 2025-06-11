@@ -30,7 +30,7 @@ const NavBar = ({ C, D, E }) => {
           }}
           onClick={D}
         >
-          <img src="../img4.png" alt="logo" />
+          <img src="/img4.png" alt="logo" />
           &nbsp;
           <span
             className="mt-1 px-2 py-3"
